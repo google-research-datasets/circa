@@ -46,9 +46,11 @@ The QA pairs and judgements were collected using crowd annotations in three phra
 
 
 Phase 1: In the first phase, we collected questions only. We designed 10 imaginary social situations which give the annotator a context for the conversation. Examples are:
+```
 	‘asking a friend for food preferences’
 	‘meeting your childhood neighbour’
 	‘your friend wants to buy a flat in New York’
+```
 Annotators were asked to suggest questions which could be asked in each situation, such that each question only requires a ‘yes’ or ‘no’ answer. 100 annotators produced 5 questions each for the 10 situations, resulting in 5000 questions. We manually filtered noisy questions  and removed redundant ones. 
 
 
@@ -56,6 +58,7 @@ Phase 2: Here we focused on eliciting answers to the questions. We sampled 3500 
 
 
 Phase 3: Finally the QA pairs (34,268) were given to a third set of annotators who were asked how the question seeker would likely interpret a particular answer. These annotators had the following options to choose from:
+```
 	* 'yes'
 	* 'probably yes' / 'sometimes yes'
 	* 'yes, subject to some conditions'
@@ -63,7 +66,7 @@ Phase 3: Finally the QA pairs (34,268) were given to a third set of annotators w
 	* 'probably no'
 	* 'in the middle, neither yes nor no'
 	* I am not sure how X will interpret Y's answer
-
+```
 
 ## Corpus format
 
@@ -73,14 +76,14 @@ The dialogue corpus is in .tsv format.
 Each row has 8 columns. All columns contain ASCII strings. An example is given below (each column is on a new line for clarity and is prepended with the column header). 
 
 ```
-ID		        :	1	
+ID		    :	1	
 Context		    :	X wants to know about Y's food preferences.
 Question-X	    :	Are you vegan?
-Canquestion-X   :   I am vegan.
+Canquestion-X       :   I am vegan.
 Answer-Y	    :	I love burgers too much. 
 Judgements	    :	no#no#no#no#no	
-Gold standard 1	:	no
-Gold standard 2	:	no
+Gold standard 1	    :	no
+Gold standard 2	    :	no
 ```
 	
 
