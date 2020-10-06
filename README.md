@@ -33,13 +33,13 @@ If it’s not too crowded. [Yes, upon a condition]
 Currently, the Circa annotations focus on a few classes such as ‘yes’, ‘no’ and ‘yes, upon condition’. The data can be used to build machine learning models which can replicate these classes on new question-answer pairs, and allow evaluation of methods for doing so. 
 
 
-## COPYRIGHT NOTICE
+## Copyright
 
 
 This dataset is the work of Annie Louis, Dan Roth, and Filip Radlinski from Google LLC, made available under the Creative Commons Attribution 4.0 License. A full copy of the license can be found at https://creativecommons.org/licenses/by-sa/4.0/
 
 
-## DATA COLLECTION METHODOLOGY
+## Data Collection Method
 
 
 The QA pairs and judgements were collected using crowd annotations in three phrases. We recruited English native speakers. The detailed annotation instructions are present in our EMNLP 2020 paper. Below we provide a brief overview.
@@ -65,7 +65,7 @@ Phase 3: Finally the QA pairs (34,268) were given to a third set of annotators w
 	* I am not sure how X will interpret Y's answer
 
 
-## EXPLANATION OF DATA FILES
+## Corpus format
 
 
 The dialogue corpus is in .tsv format.
@@ -108,7 +108,7 @@ The columns indicate:
 
 
 
-## THE 10 SOCIAL SITUATIONS
+## The 10 Social Situations
 
 The following are the situational contexts for the dialogs in our data. 
 
@@ -131,12 +131,13 @@ The following are the situational contexts for the dialogs in our data.
 
 
 
-## CHANGES
+## Changes
+
 2020-10-06: EMNLP 2020 release version
 
 
 
-## CONTACT
+## Contact
 
 If you have any technical questions about our dataset, please contact us at circa@google.com
 
