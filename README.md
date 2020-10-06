@@ -106,8 +106,7 @@ The columns indicate:
 
 7. Gold standard 1: a gold standard majority judgement from the annotators. The value is the most common interpretation and picked by at least 3 (out of 5 annotators). When a majority judgement was not reached by the above criteria, the value is ‘NA’
 
-8. Gold standard 2: Here the labels ‘probably yes / sometimes yes’ and ‘probably no’ are mapped respectively to ‘yes’ and ‘no’ before computing the majority. Still the label must be given at least 3 times to become the majority choice. This method represents a less strict way of analyzing the interpretations. 
-
+8. Gold standard 2: Here the labels ‘Probably yes / sometimes yes’, ‘Probably no', and 'I am not sure how X will interpret Y’s answer' are mapped respectively to ‘Yes’, ‘No’, and 'In the middle, neither yes nor no’ before computing the majority. Still the label must be given at least 3 times to become the majority choice. This method represents a less strict way of analyzing the interpretations. 
 ```
 
 
