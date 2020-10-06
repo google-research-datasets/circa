@@ -2,7 +2,7 @@
 
 This repository contains the dataset of polar questions and indirect answers introduced in 
 our EMNLP 2020 paper:
-"[I'd rather just go to bed": Understanding Indirect Answers]()"
+["I'd rather just go to bed": Understanding Indirect Answers]()
 
 Please cite our paper if you use this data.
 
