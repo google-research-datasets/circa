@@ -17,25 +17,25 @@ Please cite our paper if you use this data.
 
 ## Introduction
 
-Circa (meaning ‘approximately’) dataset aims to help machine learning systems to solve the problem of interpreting indirect answers to polar questions. 
+The Circa (meaning ‘approximately’) dataset aims to help machine learning systems to solve the problem of interpreting indirect answers to polar questions. 
 
 The dataset contains pairs of yes/no questions and indirect answers, together with annotations for the interpretation of the answer. The data is collected in 10 different social conversational situations (eg. food preferences of a friend). Examples:
 
 ```
-Are you vegan?
-I love burgers too much. [No]
+Q: Are you vegan?
+A: I love burgers too much. [No]
 
-Do you like spicy food?
-I put hot sauce on everything. [Yes] 
+Q: Do you like spicy food?
+A: I put hot sauce on everything. [Yes] 
 
-Would you like to go see live music?
-If it’s not too crowded. [Yes, upon a condition]
+Q: Would you like to go see live music?
+A: If it’s not too crowded. [Yes, upon a condition]
 ```
 
 Currently, the Circa annotations focus on a few classes such as ‘yes’, ‘no’ and ‘yes, upon condition’. The data can be used to build machine learning models which can replicate these classes on new question-answer pairs, and allow evaluation of methods for doing so. 
 
 
-## Copyright
+## License
 
 
 This dataset is the work of Annie Louis, Dan Roth, and Filip Radlinski from Google LLC, made available under the Creative Commons Attribution 4.0 License. A full copy of the license can be found at https://creativecommons.org/licenses/by-sa/4.0/
@@ -44,7 +44,7 @@ This dataset is the work of Annie Louis, Dan Roth, and Filip Radlinski from Goog
 ## Data Collection Method
 
 
-The QA pairs and judgements were collected using crowd annotations in three phrases. We recruited English native speakers. The detailed annotation instructions are present in our EMNLP 2020 paper. Below we provide a brief overview.
+The QA pairs and judgements were collected using crowd annotations in three phases. We recruited English native speakers. The full descriptions of the data collection and quality control are present in our [EMNLP 2020 paper](). Below we provide a brief overview only.
 
 
 Phase 1: In the first phase, we collected questions only. We designed 10 imaginary social situations which give the annotator a context for the conversation. Examples are:
@@ -53,10 +53,9 @@ Phase 1: In the first phase, we collected questions only. We designed 10 imagina
 	‘meeting your childhood neighbour’
 	‘your friend wants to buy a flat in New York’
 ```
-Annotators were asked to suggest questions which could be asked in each situation, such that each question only requires a ‘yes’ or ‘no’ answer. 100 annotators produced 5 questions each for the 10 situations, resulting in 5000 questions. We manually filtered noisy questions  and removed redundant ones. 
+Annotators were asked to suggest questions which could be asked in each situation, such that each question only requires a ‘yes’ or ‘no’ answer. 100 annotators produced 5 questions each for the 10 situations, resulting in 5000 questions. 
 
-
-Phase 2: Here we focused on eliciting answers to the questions. We sampled 3500 questions from our previous set (350 per social situation). For each question, we collected possible answers from 10 different annotators. The annotators were instructed to provide a natural phrase or a sentence as the answer and to avoid the use of explicit ‘yes’ and ‘no’ words. 
+Phase 2: Here we focused on eliciting answers to the questions. We sampled 3500 questions from our previous set. For each question, we collected possible answers from 10 different annotators. The annotators were instructed to provide a natural phrase or a sentence as the answer and to avoid the use of explicit ‘yes’ and ‘no’ words. 
 
 
 Phase 3: Finally the QA pairs (34,268) were given to a third set of annotators who were asked how the question seeker would likely interpret a particular answer. These annotators had the following options to choose from:
@@ -111,7 +110,6 @@ The columns indicate:
 
 
 
-
 ## The 10 Social Situations
 
 The following are the situational contexts for the dialogs in our data. 
@@ -130,7 +128,7 @@ The following are the situational contexts for the dialogs in our data.
 ```
 
 
-*Note:* These 10 social situations remain the same throughout our data collection. However they are phrased differently while eliciting questions, answers or when gathering the interpretation. Please see the exact prompts in the appendix section of our EMNLP 2020 paper.
+*Note:* These 10 social situations remain the same throughout our data collection. However they are phrased differently while eliciting questions, answers or when gathering the interpretation. Please see the exact prompts in the appendix section of our [EMNLP 2020 paper]().
 
 
 
