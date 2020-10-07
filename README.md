@@ -111,7 +111,7 @@ The columns indicate:
                     interpretation and picked by at least 3 (out of 5 annotators). When a majority 
 		    judgement was not reached by the above criteria, the value is ‘NA’
 
-8. Goldstandard2  : Here the labels ‘Probably yes / sometimes yes’, ‘Probably no', and 'I am not sure how
+8. goldstandard2  : Here the labels ‘Probably yes / sometimes yes’, ‘Probably no', and 'I am not sure how
                     X will interpret Y’s answer' are mapped respectively to ‘Yes’, ‘No’, and 'In the 
 		    middle, neither yes nor no’ before computing the majority. Still the label must be given
 		    at least 3 times to become the majority choice. This method represents a less strict way
