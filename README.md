@@ -60,13 +60,13 @@ Phase 2: Here we focused on eliciting answers to the questions. We sampled 3500 
 
 Phase 3: Finally the QA pairs (34,268) were given to a third set of annotators who were asked how the question seeker would likely interpret a particular answer. These annotators had the following options to choose from:
 ```
-	* 'yes'
-	* 'probably yes' / 'sometimes yes'
-	* 'yes, subject to some conditions'
+	* 'Yes'
+	* 'Probably yes' / 'sometimes yes'
+	* 'Yes, subject to some conditions'
 	* 'No'
-	* 'probably no'
-	* 'in the middle, neither yes nor no'
-	* I am not sure how X will interpret Y's answer
+	* 'Probably no'
+	* 'In the middle, neither yes nor no'
+	* 'I am not sure how X will interpret Y's answer'
 ```
 
 ## Corpus format
@@ -77,35 +77,45 @@ The dialogue corpus is in .tsv format.
 Each row has 8 columns. All columns contain ASCII strings. An example is given below (each column is on a new line for clarity and is prepended with the column header). 
 
 ```
-ID		    :	1	
-Context		    :	X wants to know about Y's food preferences.
-Question-X	    :	Are you vegan?
-Canquestion-X       :   I am vegan.
-Answer-Y	    :	I love burgers too much. 
-Judgements	    :	no#no#no#no#no	
-Gold standard 1	    :	no
-Gold standard 2	    :	no
+id		    :	1	
+context		    :	X wants to know about Y's food preferences.
+question-X	    :	Are you vegan?
+canquestion-X       :   I am vegan.
+answer-Y	    :	I love burgers too much. 
+judgements	    :	no#no#no#no#no	
+goldstandard1	    :	no
+goldstandard2	    :	no
 ```
 	
 
 The columns indicate:
 
 ```
-1. ID             : unique id for the question-answer pair
+1. id             : unique id for the question-answer pair
 
-2. Context        : the social situation for the dialogue. One of 10 situations (see next section). Each situation is a dialogue between a person who poses the question (X) and the person who answers (Y). 
+2. context        : the social situation for the dialogue. One of 10 situations (see next section). Each 
+                    situation is a dialogue between a person who poses the question (X) and the person who 
+		    answers (Y). 
 
-3. Question-X     : the question posed by X 
+3. question-X     : the question posed by X 
 
-4. Canquestion-X  : a (automatically) rewritten version of question into declarative form Eg. Do you like Italian? --> I like Italian. See the paper for details.
+4. canquestion-X  : a (automatically) rewritten version of question into declarative form 
+                    Eg. Do you like Italian? --> I like Italian. See the paper for details.
 
-5. Answer-Y       : the answer given by Y to X
+5. answer-Y       : the answer given by Y to X
 
-6. Judgements     : the interpretations for the QA pair from 5 annotators. The value is a list of 5 strings, separated by the token ‘#’
+6. judgements     : the interpretations for the QA pair from 5 annotators. The value is a list of 5 strings, 
+                    separated by the token ‘#’
 
-7. Gold standard 1: a gold standard majority judgement from the annotators. The value is the most common interpretation and picked by at least 3 (out of 5 annotators). When a majority judgement was not reached by the above criteria, the value is ‘NA’
+7. goldstandard1  : a gold standard majority judgement from the annotators. The value is the most common 
+                    interpretation and picked by at least 3 (out of 5 annotators). When a majority 
+		    judgement was not reached by the above criteria, the value is ‘NA’
 
-8. Gold standard 2: Here the labels ‘Probably yes / sometimes yes’, ‘Probably no', and 'I am not sure how X will interpret Y’s answer' are mapped respectively to ‘Yes’, ‘No’, and 'In the middle, neither yes nor no’ before computing the majority. Still the label must be given at least 3 times to become the majority choice. This method represents a less strict way of analyzing the interpretations. 
+8. Goldstandard2  : Here the labels ‘Probably yes / sometimes yes’, ‘Probably no', and 'I am not sure how
+                    X will interpret Y’s answer' are mapped respectively to ‘Yes’, ‘No’, and 'In the 
+		    middle, neither yes nor no’ before computing the majority. Still the label must be given
+		    at least 3 times to become the majority choice. This method represents a less strict way
+		    of analyzing the interpretations. 
 ```
 
 
