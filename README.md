@@ -2,7 +2,7 @@
 
 This repository contains the dataset of polar questions and indirect answers introduced in 
 our EMNLP 2020 paper:
-["I'd rather just go to bed": Understanding Indirect Answers]()
+["I'd rather just go to bed": Understanding Indirect Answers](https://arxiv.org/pdf/2010.03450.pdf)
 
 Please cite our paper if you use this data.
 
@@ -44,7 +44,7 @@ This dataset is the work of Annie Louis, Dan Roth, and Filip Radlinski from Goog
 ## Data Collection Method
 
 
-The QA pairs and judgements were collected using crowd annotations in three phases. We recruited English native speakers. The full descriptions of the data collection and quality control are present in our [EMNLP 2020 paper](). Below we provide a brief overview only.
+The QA pairs and judgements were collected using crowd annotations in three phases. We recruited English native speakers. The full descriptions of the data collection and quality control are present in our [EMNLP 2020 paper](https://arxiv.org/pdf/2010.03450.pdf). Below we provide a brief overview only.
 
 
 Phase 1: In the first phase, we collected questions only. We designed 10 imaginary social situations which give the annotator a context for the conversation. Examples are:
@@ -138,7 +138,7 @@ The following are the situational contexts for the dialogs in our data.
 ```
 
 
-*Note:* These 10 social situations remain the same throughout our data collection. However they are phrased differently while eliciting questions, answers or when gathering the interpretation. Please see the exact prompts in the appendix section of our [EMNLP 2020 paper]().
+*Note:* These 10 social situations remain the same throughout our data collection. However they are phrased differently while eliciting questions, answers or when gathering the interpretation. Please see the exact prompts in the appendix section of our [EMNLP 2020 paper](https://arxiv.org/pdf/2010.03450.pdf).
 
 
 
